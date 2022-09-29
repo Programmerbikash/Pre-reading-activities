@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Sidebar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
@@ -10,10 +10,20 @@ const Sidebar = (props) => {
     const { addToTime, btnTime, activities } = props;
 
     const [btn, setBtn] = useState(0);
-    
+
     const addBreakBtn = (data) => {
         const newValue = data;
         setBtn(newValue);
+
+        let time = {}
+        const getTime = localStorage.getItem('time');
+        if (getTime) {
+            time = JSON.parseInt(btn);
+        }
+        else {
+            time = data;
+        }
+        localStorage.setItem('times', JSON.stringify(time));
     }
 
     return (

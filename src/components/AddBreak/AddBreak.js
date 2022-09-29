@@ -1,11 +1,8 @@
 import React from 'react';
-import { useState } from 'react';
-import ExerciseDetails from '../ExerciseDetails/ExerciseDetails';
 import './AddBreak.css';
 
 const AddBreak = (props) => {
-    const { activities, time, addBreakBtn } = props;
-    
+    const { addBreakBtn } = props;
     
     return (
         <div>

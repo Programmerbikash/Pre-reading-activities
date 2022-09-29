@@ -8,6 +8,7 @@ const ExerciseDetails = (props) => {
     for (const activityTime of btnTime) {
         totalTime = totalTime + activityTime.time;
     }
+
     return (
         <div className='exercise-details'>
             <h3>Exercise Details</h3>

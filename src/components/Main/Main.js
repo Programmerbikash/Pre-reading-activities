@@ -19,7 +19,8 @@ const Main = () => {
     const addToTime = activity => {
         const newTime = [...btnTime, activity]
         setBtnTime(newTime);
-    }
+  }
+  
   return (
     <div className="main-container">
       <div className="cart-container">
