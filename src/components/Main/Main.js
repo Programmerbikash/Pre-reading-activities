@@ -14,6 +14,8 @@ const Main = () => {
       .then((res) => res.json())
       .then((data) => setActivities(data));
   }, []);
+
+    
   return (
     <div className="main-container">
       <div className="cart-container">
@@ -25,10 +27,12 @@ const Main = () => {
         </div>
         <div className="bottom">
           {/* <h4>Select Today's Routine</h4> */}
-          {activities.map((book) => console.log(book))}
+            {
+                // activities.map((activity) => console.log(activity))
+            }
 
-          {activities.map((book) => (
-            <Activities book={book} key={book.id}></Activities>
+          {activities.map((activity) => (
+            <Activities activity={activity} key={activity.id}></Activities>
           ))}
         </div>
       </div>

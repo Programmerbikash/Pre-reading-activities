@@ -3,8 +3,9 @@ import './Sidebar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import image from '../Images/bikash.jpg';
+import ExerciseDetails from '../ExerciseDetails/ExerciseDetails';
 
-const Sidebar = () => {
+const Sidebar = (props) => {
     return (
         <div className='sidebar'>
             <div className="profile">
@@ -30,7 +31,9 @@ const Sidebar = () => {
             </div>
             <div className="addBreak">
                 <p>Add A Break</p>
+
             </div>
+            <ExerciseDetails></ExerciseDetails>
         </div>
     );
 };
