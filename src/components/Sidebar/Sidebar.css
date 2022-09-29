@@ -21,3 +21,17 @@
     font-weight: 700;
     font-size: 17px;
 }
+
+.weight-height{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f3f1f1;
+    color: black;
+    border-radius: 20px;
+    margin: 25px 10px;
+}
+
+.bold{
+    font-weight: 700;
+}

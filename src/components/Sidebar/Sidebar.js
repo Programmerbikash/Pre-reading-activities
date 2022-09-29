@@ -14,10 +14,22 @@ const Sidebar = () => {
                     <p><FontAwesomeIcon icon={faLocationDot} /> <small>Cox's Bazar, Bangladesh</small></p>
                 </div>
             </div>
-            <div>
-                <p>Weight: </p>
-                <p>Height: </p>
-                <p>Age: </p>
+            <div className='weight-height'>
+                <div>
+                    <p className='bold'>55 <small>kg</small></p>
+                    <p>Weight</p>
+                </div>
+                <div>
+                    <p className='bold'>5'5 <small>in</small></p>
+                    <p>Height</p>
+                </div>
+                <div>
+                    <p className='bold'>24 <small>yrs</small></p>
+                    <p>Age</p>
+                </div>
+            </div>
+            <div className="addBreak">
+                <p>Add A Break</p>
             </div>
         </div>
     );
