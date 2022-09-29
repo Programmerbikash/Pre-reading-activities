@@ -6,6 +6,10 @@ import image from '../Images/bikash.jpg';
 import ExerciseDetails from '../ExerciseDetails/ExerciseDetails';
 
 const Sidebar = (props) => {
+    const { addToTime, btnTime, activities} = props;
+
+    // console.log(btnTime);
+    // const { time } = addToTime;
     return (
         <div className='sidebar'>
             <div className="profile">
@@ -33,7 +37,7 @@ const Sidebar = (props) => {
                 <p>Add A Break</p>
 
             </div>
-            <ExerciseDetails></ExerciseDetails>
+            <ExerciseDetails addToTime={addToTime} btnTime={btnTime}></ExerciseDetails>
         </div>
     );
 };

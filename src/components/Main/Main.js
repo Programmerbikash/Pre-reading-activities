@@ -7,7 +7,8 @@ import logo from "../Images/logo.png";
 import Activities from "../Activities/Activities";
 
 const Main = () => {
-  const [activities, setActivities] = useState([]);
+    const [activities, setActivities] = useState([]);
+    const [btnTime, setBtnTime] = useState([]);
 
   useEffect(() => {
     fetch("data.json")
@@ -15,7 +16,10 @@ const Main = () => {
       .then((data) => setActivities(data));
   }, []);
 
-    
+    const addToTime = activity => {
+        const newTime = [...btnTime, activity]
+        setBtnTime(newTime);
+    }
   return (
     <div className="main-container">
       <div className="cart-container">
@@ -32,12 +36,12 @@ const Main = () => {
             }
 
           {activities.map((activity) => (
-            <Activities activity={activity} key={activity.id}></Activities>
+            <Activities activity={activity} key={activity.id} addToTime={addToTime}></Activities>
           ))}
         </div>
       </div>
       <div className="sidebar-container">
-        <Sidebar></Sidebar>
+        <Sidebar btnTime={btnTime} activities={activities} addToTime={addToTime}></Sidebar>
       </div>
     </div>
   );
