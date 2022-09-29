@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Sidebar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import image from '../Images/bikash.jpg';
 import ExerciseDetails from '../ExerciseDetails/ExerciseDetails';
+import AddBreak from '../AddBreak/AddBreak';
 
 const Sidebar = (props) => {
-    const { addToTime, btnTime, activities} = props;
+    const { addToTime, btnTime, activities } = props;
 
-    // console.log(btnTime);
-    // const { time } = addToTime;
+    const [btn, setBtn] = useState(0);
+    
+    const addBreakBtn = (data) => {
+        const newValue = data;
+        setBtn(newValue);
+    }
+
     return (
         <div className='sidebar'>
             <div className="profile">
@@ -33,11 +39,11 @@ const Sidebar = (props) => {
                     <p>Age</p>
                 </div>
             </div>
-            <div className="addBreak">
-                <p>Add A Break</p>
+            <div>
+                <AddBreak activities={activities} addBreakBtn={addBreakBtn}></AddBreak>
 
             </div>
-            <ExerciseDetails addToTime={addToTime} btnTime={btnTime}></ExerciseDetails>
+            <ExerciseDetails addBreakBtn={addBreakBtn} btn={btn} addToTime={addToTime} btnTime={btnTime}></ExerciseDetails>
         </div>
     );
 };

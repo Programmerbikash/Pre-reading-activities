@@ -1,0 +1,23 @@
+.addBreak{
+    margin: 50px 10px;
+}
+
+.addBreak p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btn-add{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: coral;
+    font-size: 15px;
+    font-weight: 700;
+}

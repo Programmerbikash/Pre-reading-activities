@@ -1,7 +1,9 @@
+.exercise-details{
+    margin: 50px 10px;
+}
 .box{
     background-color: lightyellow;
-    margin: 10px;
-    padding: 15px;
+    padding: 5px 10px;
     border-radius: 20px;
 }
 
