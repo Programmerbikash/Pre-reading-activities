@@ -1,0 +1,23 @@
+.sidebar{
+    background-color: bisque;
+    height: 1200px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.profile img{
+    width: 90px;
+    height: 90px;
+    margin-right: 5px;
+    margin-top: 14px;
+    border-radius: 15px;
+}
+
+.profile-name{
+    font-weight: 700;
+    font-size: 17px;
+}
