@@ -1,0 +1,28 @@
+.questions{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.first{
+    background-color: burlywood;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px 0;
+    font-weight: 500;
+}
+
+.second{
+    background-color: cadetblue;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px 0;
+    font-weight: 500;
+}
+
+.third{
+    background-color: darkseagreen;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px 0;
+    font-weight: 500;
+}
