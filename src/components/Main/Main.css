@@ -31,3 +31,66 @@
     gap: 10px;
     margin-left: 40px;
 }
+
+ /* Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 575px) { 
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cart-container .bottom{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .menu h1{
+        color: coral;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) and (max-width: 991px) { 
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cart-container .bottom{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu h1{
+        color: coral;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        margin-left: 15px;
+    }
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1400px) { 
+    .main-container{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .cart-container .bottom{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .menu h1{
+        color: coral;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        margin-left: 20px;
+    }
+ }
